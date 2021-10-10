@@ -1,8 +1,5 @@
 import React from 'react';
-import '../styles/banner.css';
 import PropTypes from "prop-types"
-
-
 
 export default class Banner extends React.Component {
     render(){
