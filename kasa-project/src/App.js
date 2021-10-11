@@ -6,15 +6,16 @@ import Menustyle from './styles/menu.js';
 
 
 
+
 export default class App extends React.Component {
   render(){
     return (
-      <Router>
+    <Router>
       <Menu/> <Menustyle/>
         <Route exact path="/">
                     <Accueil />
         </Route>
-      </Router>
+    </Router>
     )
   }
 }
