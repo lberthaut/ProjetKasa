@@ -1,6 +1,6 @@
-import styled, { createGlobalStyle } from "styled-components";
+import {createGlobalStyle} from "styled-components";
 
-const globalStyle = createGlobalStyle`
+const Bannerstyle = createGlobalStyle`
 body{
     font-family: calibri;
 }
@@ -21,6 +21,7 @@ body{
     font-weight: 500;
     font-size: xx-large;
     color: white;
+    margin: 0;
 }
 .banner-background{
     width: 100%;
@@ -32,4 +33,4 @@ body{
 }
 `;
 
-export default globalStyle
+export default Bannerstyle;
