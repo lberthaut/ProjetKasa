@@ -18,9 +18,10 @@ const Cardstyle = createGlobalStyle`
 
 .card-title {
   position: absolute;
-  width: 93%;
+  width: 89%;
   padding-left: 7%;
   padding-top: 15%;
+  padding-right: 4%;
   bottom: 0;
   height: 4em;
   color: white;
@@ -28,7 +29,7 @@ const Cardstyle = createGlobalStyle`
   font-size: small;
   font-weight: lighter;
   border-radius: 0 0 0.5em 0.5em;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.63)60%);
   font-size: 18px;
   margin: 0;
   display: flex;

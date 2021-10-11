@@ -1,9 +1,6 @@
 import {createGlobalStyle} from "styled-components";
 
 const Bannerstyle = createGlobalStyle`
-body{
-    font-family: calibri;
-}
 .banner{
     position: relative;
     width: 70%;

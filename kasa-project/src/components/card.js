@@ -8,7 +8,7 @@ export default class Card extends React.Component{
         const {id, title, src}= this.props;
 
         return(
-            <Link to={`/selection/${id}`}>
+            <Link to={`/${id}`}>
                 <img className="card-background" src={src} alt={title}/>
                 <h2 className="card-title">{title}</h2>
             </Link>
