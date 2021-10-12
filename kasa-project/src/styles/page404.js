@@ -30,6 +30,6 @@ main {
   font-size: x-small;
   border-bottom: solid 2px #ff6060;
 }
-`;
+`
 
 export default Errorstyle;
