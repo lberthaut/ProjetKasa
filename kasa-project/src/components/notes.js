@@ -12,8 +12,7 @@ export default class Notes extends React.Component{
                 {num.map((index)=> 
                 notes >= index ? (
                     <i key={index} className="fas fa-star full-star"></i>):
-                    (<i key={index} className="fas fa-star enpty-star"></i>)
-                
+                    (<i key={index} className="fas fa-star empty-star"></i>)
                 )}
             </div>
         );
@@ -21,5 +20,5 @@ export default class Notes extends React.Component{
 }
 
 Notes.propTypes ={
-    note: PropTypes.oneOf(['1', '2', '3', '4', '5']).isRequired
+    notes: PropTypes.oneOf(['1', '2', '3', '4', '5']).isRequired
 };

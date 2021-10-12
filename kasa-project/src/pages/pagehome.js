@@ -9,6 +9,7 @@ import Proprietairestyle from '../styles/proprietaire.js';
 import Tagsstyle from '../styles/tags.js';
 import Pagehomestyle from '../styles/pagehome.js';
 import Error404 from '../components/error.js';
+import Notesstyle from '../styles/notes.js';
 
 
 export default class MaisonPage extends React.Component{
@@ -34,7 +35,7 @@ export default class MaisonPage extends React.Component{
                         </article>
                         <article className="proprietaire">
                             <Proprietaire name={host.name} src={host.picture}/><Proprietairestyle/>
-                            <Notes rating={rating}/>
+                            <Notes notes={rating}/><Notesstyle/>
                         </article>
                     </section>
                     <section className="infos">
