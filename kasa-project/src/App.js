@@ -1,8 +1,9 @@
 import React from 'react';
 import Accueil from './pages/pageaccueil.js';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { Redirect, Route, Switch, BrowserRouter } from 'react-router-dom';
 import Menu from './components/menu.js';
 import Menustyle from './styles/menu.js';
+import Erreurpage from './components/error.js';
 
 
 
@@ -10,12 +11,14 @@ import Menustyle from './styles/menu.js';
 export default class App extends React.Component {
   render(){
     return (
-    <Router>
-      <Menu/> <Menustyle/>
-        <Route exact path="/">
-                    <Accueil />
-        </Route>
-    </Router>
+    <BrowserRouter>
+          <Menu/> <Menustyle/>
+    <Switch>
+        <Route exact path="/" component={Accueil}/>
+        <Route path="/404" component={Erreurpage}/>
+        <Redirect to="/404"/>
+    </Switch>
+    </BrowserRouter>
     )
   }
 }
