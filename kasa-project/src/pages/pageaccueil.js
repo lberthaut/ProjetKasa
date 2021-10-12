@@ -17,6 +17,6 @@ export default class Accueil extends React.Component {
                 <Homelist/><Homeliststyle/><Cardstyle/>
                 <Footer/><Footerstyle/>
             </React.Fragment>
-        )
+        );
     }
 }
