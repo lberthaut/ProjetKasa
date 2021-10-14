@@ -1,5 +1,6 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import Errorstyle from '../styles/page404.js';
 
 export default class Error404 extends React.Component{
     render(){
@@ -16,6 +17,7 @@ export default class Error404 extends React.Component{
                 <Link className="nav-link error-back" to="/">
                     Retourner à la page d'accueil
                 </Link>
+                <Errorstyle/>
             </main>
         );
     }

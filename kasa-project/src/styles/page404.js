@@ -17,6 +17,7 @@ main {
 .error-number {
   font-size: 10em;
   font-weight: 800;
+  margin: 0;
 }
 
 .error-message {
@@ -26,8 +27,8 @@ main {
 .error-back {
   width: fit-content;
   position: fixed;
-  bottom: 15em;
-  font-size: x-small;
+  bottom: 17em;
+  font-size: small;
   border-bottom: solid 2px #ff6060;
 }
 `

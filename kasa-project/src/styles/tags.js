@@ -3,6 +3,7 @@ import {createGlobalStyle} from "styled-components";
 const Tagsstyle = createGlobalStyle`
 .tag-list {
     margin-top: 1em;
+    width: 150px;
 }
 
 .tag {

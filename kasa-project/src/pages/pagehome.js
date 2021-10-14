@@ -10,13 +10,15 @@ import Tagsstyle from '../styles/tags.js';
 import Pagehomestyle from '../styles/pagehome.js';
 import Error404 from '../components/error.js';
 import Notesstyle from '../styles/notes.js';
+import Dropdown from '../components/dropdown.js';
+import Dropdownstyle from '../styles/dropdown.js';
 
 
 export default class MaisonPage extends React.Component{
     render(){
         const urlId = this.props.match.params.id;
         const current= logements.find((data)=> data.id === urlId);
-        const {pictures, title, location, tags, host, rating/* , description, equipments */}= current || [];
+        const {pictures, title, location, tags, host, rating, description, equipments}= current || [];
 
         if (!current) return <Error404 />;
     
@@ -39,7 +41,8 @@ export default class MaisonPage extends React.Component{
                         </article>
                     </section>
                     <section className="infos">
-                        {/* dropdown */}
+                        <Dropdown className="infos-descriptions" title="description" content={description}/><Dropdownstyle/>
+                        <Dropdown className="infos-equipements" title="equipements" content={equipments}/>
                     </section>
                 </main>
             </Fragment>

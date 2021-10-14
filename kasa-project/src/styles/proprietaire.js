@@ -5,6 +5,7 @@ const Proprietairestyle = createGlobalStyle`
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .proprietaire-name {
@@ -14,7 +15,7 @@ const Proprietairestyle = createGlobalStyle`
   font-size: small;
 }
 
-.proprietaire-avatar {
+.proprietaire-photo {
   width: 50px;
   height: 50px;
   border-radius: 50%;
