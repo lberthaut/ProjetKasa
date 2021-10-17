@@ -3,17 +3,29 @@ import {createGlobalStyle} from "styled-components";
 const Tagsstyle = createGlobalStyle`
 .tag-list {
     margin-top: 1em;
-    width: 150px;
+    width: 190px;
+    text-align: center;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    white-space: nowrap;
 }
 
 .tag {
     margin-top: 1em;
     margin-right: 1em;
-    padding: 0.5em 4em;
     border-radius: 3em;
     background: #FF6060;
     color: white;
-    font-size: xx-small;
+    font-size: 11px;
+    height: 20px;
+    line-height: 20px;
+    padding: 0px 15px 0px 15px;
+   text-align: center;
+}
+
+::marker{
+    content: none;
 }
 `
 

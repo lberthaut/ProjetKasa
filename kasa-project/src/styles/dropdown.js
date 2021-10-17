@@ -2,8 +2,13 @@ import {createGlobalStyle} from "styled-components";
 
 const  Dropdownstyle = createGlobalStyle`
 .infos {
-  width: 80%;
-  margin: 1.5em auto 0;
+  width: 70%;
+  margin-left: 15%;
+  margin-bottom: 30px;
+}
+
+.infos-descriptions, .infos-equipements{
+  width: 45%;
 }
 
 .dropdown-title {
@@ -17,7 +22,6 @@ const  Dropdownstyle = createGlobalStyle`
   border: none;
   border-radius: 0.5em;
   background: #ff6060;
-  font-family: 'MONTSERRAT';
   font-size: medium;
   color: white;
 }
@@ -26,13 +30,21 @@ const  Dropdownstyle = createGlobalStyle`
   position: relative;
   z-index: -1;
   width: 100%;
-  margin: -1em auto 1em;
-  padding: 2em 0.5em 0.5em;
   display: flex;
-  border-radius: 0 0 0.5em 0.5em;
+  border-radius: 0.5em;
   background: #f7f7f7;
   color: #ff6060;
   font-size: medium;
+  margin: 0;
+  padding: 0;
+ ${'' /*  padding: 5px 0px 5px 0px; */}
+  & > li{
+    padding: 2px 0px 3px 8px;
+  }& > p{
+    padding: 2px 4px 6px 8px;
+    margin: 0;
+    line-height: 20px;
+  }
 }
 `
 export default Dropdownstyle;

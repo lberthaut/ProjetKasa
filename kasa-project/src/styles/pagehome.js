@@ -3,8 +3,10 @@ import {createGlobalStyle} from "styled-components";
 const Pagehomestyle = createGlobalStyle`
 .home {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 15%;
 }
 
 .home-infos {

@@ -35,9 +35,9 @@ render (){
             )}
 
             {isOpen && typeof content === "string" && (
-                <p key={id} className="dropdown-infos">
-                    {content}
-                </p>
+                <div key={id} className="dropdown-infos">
+                    <p>{content}</p>
+                </div>
             )}
         </article>
     )
