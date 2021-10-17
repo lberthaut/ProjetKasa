@@ -21,13 +21,13 @@ render (){
 
     return(
         <article className={className}>
-            <button className="dropdown-title" onClick={this.showInfos}>
+            <button className="dropdown-title width-dropdown" onClick={this.showInfos}>
                 <span>{title}</span>
                 <span>{isOpen ? (<i className="fas fa-chevron-up"></i>):(<i className="fas fa-chevron-down"></i>)}</span>
             </button>
 
             {isOpen && typeof content !== "string" &&(
-                <ul className="dropdown-infos">
+                <ul className="dropdown-infos  width-dropdown">
                     {content.map((item, id)=>(
                         <li key={id}>{item}</li>
                     ))}
@@ -35,7 +35,7 @@ render (){
             )}
 
             {isOpen && typeof content === "string" && (
-                <div key={id} className="dropdown-infos">
+                <div key={id} className="dropdown-infos  width-dropdown">
                     <p>{content}</p>
                 </div>
             )}

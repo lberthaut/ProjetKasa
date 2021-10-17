@@ -15,7 +15,6 @@ const  Dropdownstyle = createGlobalStyle`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
   height: 35px;
   margin: 0 auto;
   padding: 0 10px;
@@ -29,7 +28,6 @@ const  Dropdownstyle = createGlobalStyle`
 .dropdown-infos {
   position: relative;
   z-index: -1;
-  width: 100%;
   display: flex;
   border-radius: 0.5em;
   background: #f7f7f7;
@@ -37,14 +35,18 @@ const  Dropdownstyle = createGlobalStyle`
   font-size: medium;
   margin: 0;
   padding: 0;
- ${'' /*  padding: 5px 0px 5px 0px; */}
   & > li{
     padding: 2px 0px 3px 8px;
-  }& > p{
+  }
+  & > p{
     padding: 2px 4px 6px 8px;
     margin: 0;
     line-height: 20px;
   }
 }
+.width-dropdown{
+  width: 100%;
+}
 `
+
 export default Dropdownstyle;
