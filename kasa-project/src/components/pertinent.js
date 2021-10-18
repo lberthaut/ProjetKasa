@@ -8,7 +8,7 @@ export default class APropos extends React.Component {
     render() {
       return (
         <Fragment>
-          <Banner src={aproposbanner} alt="Paysage" title="Nos valeurs" />
+          <Banner src={aproposbanner} alt="Paysage" />
           <main>
             {aProposData.map(({ id, title, content }) => (
               <Dropdown
