@@ -27,6 +27,7 @@ const Pagehomestyle = createGlobalStyle`
   display: flex;
   flex: 1 100%;
   margin-top: 2em;
+  margin-left:15%;
 }
 
 .infos-descriptif {

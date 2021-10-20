@@ -10,7 +10,9 @@ export default class Gallery extends React.Component{
 
     previousImg = ()=>{
         const index= this.state.actualImg;
-        index ===0 ? this.setState({actualImg: this.props.src.length - 1}): this.setState({actualImg: index - 1});
+        index ===0 
+        ? this.setState({actualImg: this.props.src.length - 1})
+        : this.setState({actualImg: index - 1});
     };
 
     nextImg = () => {
