@@ -31,11 +31,7 @@ export default class Gallery extends React.Component{
             {src.length > 1 && (
               <Fragment>
                 <button className="previous" onClick={this.previousImg}>
-                  <img
-                    className="previous-icon"
-                    src={previous}
-                    alt="chevron-left"
-                  />
+                  <img className="previous-icon" src={previous} alt="chevron-left"/>
                 </button>
                 <button className="next" onClick={this.nextImg}>
                   <img className="next-icon" src={next} alt="chevron-right" />
