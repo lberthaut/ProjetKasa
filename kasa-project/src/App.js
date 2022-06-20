@@ -10,18 +10,18 @@ import Maisonpage from './pages/pagehome.js';
 import Apropos from './pages/pageapropos.js';
 
 export default class App extends React.Component {
-  render(){
+  render() {
     return (
-    <BrowserRouter>
-          <Menu/> <Menustyle/>
-    <Switch>
-        <Route exact path="/" component={Accueil}/>
-        <Route path="/apropos" component={Apropos}/>
-        <Route path="/:id" render={(props) => <Maisonpage {...props}/>}/>
-        <Route path="/404" component={Erreurpage}/>
-    </Switch>
-    <Footer/><Footerstyle/>
-    </BrowserRouter>
+      <BrowserRouter>
+        <Menu /> <Menustyle />
+        <Switch>
+          <Route exact path="/projetkasa" component={Accueil} />
+          <Route path="/apropos" component={Apropos} />
+          <Route path="/:id" render={(props) => <Maisonpage {...props} />} />
+          <Route path="/404" component={Erreurpage} />
+        </Switch>
+        <Footer /><Footerstyle />
+      </BrowserRouter>
     )
   }
 }
