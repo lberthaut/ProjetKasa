@@ -1,7 +1,7 @@
 {
   "name": "kasa-project",
   "version": "0.1.0",
-  "homepage": "https://lberthaut.github.io/projetkasa/index.html",
+  "homepage": "https://lberthaut.github.io/projetkasa",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
