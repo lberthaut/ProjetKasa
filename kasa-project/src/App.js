@@ -16,9 +16,9 @@ export default class App extends React.Component {
         <Menu /> <Menustyle />
         <Switch>
           <Route exact path="/projetkasa" component={Accueil} />
-          <Route path="/apropos" component={Apropos} />
-          <Route path="/:id" render={(props) => <Maisonpage {...props} />} />
-          <Route path="/404" component={Erreurpage} />
+          <Route path="/projetkasa/apropos" component={Apropos} />
+          <Route path="/projetkasa/:id" render={(props) => <Maisonpage {...props} />} />
+          <Route path="/projetkasa/404" component={Erreurpage} />
         </Switch>
         <Footer /><Footerstyle />
       </BrowserRouter>
