@@ -15,7 +15,7 @@ export default class Menu extends React.Component {
           <NavLink className="nav-link" activeClassName="active" exact to="/projetkasa">
             Accueil
           </NavLink>
-          <NavLink className="nav-link" activeClassName="active" to="/apropos">
+          <NavLink className="nav-link" activeClassName="active" to="/projetkasa/apropos">
             A Propos
           </NavLink>
         </ul>
